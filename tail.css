@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+.svg-icon {
+    fill: #fff;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
