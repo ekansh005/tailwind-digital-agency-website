@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email Marketing Agency</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-body text-gray-900">
     <div class="bg-gray-100">
-        <div class="px-32">
-            <div class="flex justify-between pt-8">
-                <header>
+        <div class="px-8 md:px-16 lg:px-32">
+            <div class="grid grid-cols-12 pt-8">
+                <header class="col-span-4">
                     <div>
                         <a href="index.html">
                             <h1 class="text-4xl">Agency</h1>
                         </a>
                     </div>
                 </header>
-                <nav class="flex my-3">
-                    <div>
-                        <ul>
-                            <li class="inline mx-6"><a href="#">Services</a></li>
-                            <li class="inline mx-6"><a href="#">Pricing</a></li>
-                            <li class="inline mx-6"><a href="#">About Us</a></li>
-                            <li class="inline mx-6"><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="ml-14">
-                        <span><a href="#" class="mx-6">Login</a></span>
-                        <span><a href="#" class="ml-6 px-4 py-2 rounded-md bg-primary text-white">Sign up</a></span>
-                    </div>
+                <div class="col-span-7 md:hidden"></div>
+                <div id="burger" class="col-span-1 cursor-pointer md:hidden">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </div>
+                <nav id="menu" class="col-span-12 lg:col-span-8 my-3 hidden md:block">
+                    <ul class="md:grid md:grid-cols-2">
+                        <div class="md:flex md:justify-between">
+                            <li class="my-2 md:inline md:my-0"><a href="#">Services</a></li>
+                            <li class="my-2 md:inline md:my-0"><a href="#">Pricing</a></li>
+                            <li class="my-2 md:inline md:my-0"><a href="#">About Us</a></li>
+                            <li class="my-2 md:inline md:my-0"><a href="#">Contact</a></li>
+                        </div>
+                        <div class="md:flex md:justify-end">
+                            <li class="my-2 md:inline md:my-0 md:mr-8"><a href="#">Login</a></li>
+                            <li class="my-2 md:inline md:my-0">
+                                <a href="#" class="md:px-4 md:py-2 md:rounded-md md:bg-primary md:text-white">Sign
+                                    Up</a>
+                            </li>
+                        </div>
+                    </ul>
                 </nav>
             </div>
             <div class="my-4">
@@ -483,6 +495,7 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
